@@ -1,20 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #d0dacd;
-}
+
 
 .photo-gallery{
-    padding: 80px 20px 20px 20px; 
+    padding: 100px 20px 20px 20px; 
     position:relative;
 }
 
 .heading{
     position: absolute;
-    top: 8vh;
+    top: 75px;
     left: 45%;
     border: 2px solid #205012;
+    background-color: #67ae4c;
     width: 10%;
     height: 8vh;
 }
