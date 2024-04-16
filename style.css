@@ -50,7 +50,7 @@
 }
 
 .menu>li>a {
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     text-decoration: none;
     background-color: #67ae4c;
     color: white;
@@ -60,6 +60,10 @@
 
 .menu>li>a:hover {
     color: #205012;
+}
+#icons{
+    background-color: #67ae4c;
+    padding-right: 4px;
 }
 /* nav bar section closed*/
 
@@ -71,22 +75,24 @@
 
 .new-post {
     width: 100%;
-    height: 400px;
-    border: 1px solid #205012;
+    height: 500px;
+    padding: 40px 0 20px 0;
 }
 
 .new-post>img {
     width: 100%;
     height: 100%;
+    border: 1px solid #205012;
     object-fit: cover;
 }
 
 .post-item {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    width: auto;
     row-gap: 20px;
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
 }
 
 .post {
@@ -136,3 +142,24 @@
     background-color: #67ae4c;
 }
 /* footer section closed */
+
+@media(min-width: 640px){
+    .post-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+@media(min-width: 640px){
+    .post-box {
+    width: 100%;
+    padding: 50px 20px 20px 20px;
+    }
+}
+@media(min-width: 640px){
+    .new-post {
+        width: 100%;
+        height: 400px;
+    }
+}
