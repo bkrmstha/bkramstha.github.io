@@ -1,45 +1,57 @@
 
-
 .photo-gallery{
-    padding: 100px 20px 20px 20px; 
-    position:relative;
+    padding: 40px 20px 0px 20px; 
+}
+.container{
+    /* position: relative; */
+    width: 100%;
+    justify-items: center;
+    border: 2px solid #205012;
 }
 
 .heading{
-    position: absolute;
-    top: 75px;
-    left: 45%;
     border: 2px solid #205012;
     background-color: #67ae4c;
-    width: 10%;
-    height: 8vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* width: 150px;
+    height: 50px; */
 }
 .heading> h1{
-    text-align: center;
+    
     color: #205012;
-    font-size: 6vh;
+    background-color: #67ae4c;
+    font-size: 40px;
 }
 
 .gallery-1{
     border: 2px solid #205012;
     /* width: 100%;
     height: 280px; */
-    padding: 10px 10px 20px 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .gallery-1> i{
     font-size: 50px;
+    color: #67ae4c;
 }
 .gallery-1> i:hover{
-    color: #67ae4c;
+    color: #205012;
+}
+
+@media(max-width:640px){
+.photo-box2{
+    display: none;
+}
 }
 
 .photo-box1{
     padding: 20px;
-    width: 200px;
-    height: 260px;
+    width: 260px;
+    height: 280px;
     
 }
 .photo-box1> img{
@@ -48,10 +60,10 @@
     width: 100%;
     object-fit: cover;
 }
-/* .photo-box2{
+.photo-box2{
     padding: 20px;
-    width: 200px;
-    height: 260px;
+    width: 260px;
+    height: 280px;
     
 }
 .photo-box2> img{
@@ -59,4 +71,4 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-} */
+}

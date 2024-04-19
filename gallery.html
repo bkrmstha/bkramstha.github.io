@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Welcome to Culnatoure Photography</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./gallery.css">
+    
     <!-- font zone -->
     <script src="https://kit.fontawesome.com/15d27867cb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,52 +17,154 @@
 </head>
 <body>
     <!--nav bar started-->
-    <div class="menu-bar">
-        <div class="title">
-        <img src="./images/logo.png" alt="">
-            <h2>Culnatoure Photography</h2>
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+            <h1>Culnatoure Photography</h1>
         </div>
-        <ul class="menu">
+        <ul id="menulist">
             <li><a href="./index.html">
-                <i id="icons" class="fa-solid fa-house"></i>Home</a>
+                <i id="icon" class="fa-solid fa-house"></i>Home</a>
             </li>
             <li><a href="./gallery.html">
-                <i id="icons" class="fa-brands fa-envira"></i>Gallery</a>
+                <i id="icon" class="fa-brands fa-envira"></i>Gallery</a>
+            </li>
+            <li><a href="./about.html">
+                <i id="icon" class="fa-solid fa-address-card"></i>About Us</a>
             </li>
             <li><a href="">
-                <i id="icons" class="fa-solid fa-address-card"></i>About</a>
-            </li>
-            <li><a href="">
-                <i id="icons" class="fa-solid fa-right-to-bracket"></i>Log In</a>
+                <i id="icon" class="fa-solid fa-right-to-bracket"></i>Login</a>
             </li>
         </ul>
-    </div>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "300px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
     <!--nav bar closed-->
 
     <!-- album section started-->
 
     <section class="photo-gallery">
+        <div class="container">
         <div class="heading">
         <h1>Birds</h1>
         </div>
         <div class="gallery-1">
             <i class="fa-solid fa-circle-chevron-left"></i>            
             <div class="photo-box1">
-                <img src="./images/posts/1 (1).JPG" alt="">
+                <img src="./images/posts/bird (1).jpg" alt="">
             </div>
-            <div class="photo-box1">
-                <img src="./images/posts/1 (1).JPG" alt="">
+            <div class="photo-box2">
+                <img src="./images/posts/bird (2).jpg" alt="">
             </div>
-            <div class="photo-box1">
-                <img src="./images/posts/1 (1).JPG" alt="">
+            <div class="photo-box2">
+                <img src="./images/posts/bird (3).jpg" alt="">
             </div>
-            <div class="photo-box1">
-                <img src="./images/posts/1 (1).JPG" alt="">
+            <div class="photo-box2">
+                <img src="./images/posts/93762973_115207093483872_8176818781767598080_n.jpg" alt="">
             </div>
+            <div class="photo-box2">
+                <img src="./images/posts/image1.jpg" alt="">
+            </div>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        </div>
+    </section>
+
+    <section class="photo-gallery">
+        <div class="container">
+        <div class="heading">
+        <h1>Flowers</h1>
+        </div>
+        <div class="gallery-1">
+            <i class="fa-solid fa-circle-chevron-left"></i>            
             <div class="photo-box1">
+                <img src="./images/posts/flower (3).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/flower (1).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/flower-5.jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/flower (2).jpg" alt="">
+            </div>
+            <div class="photo-box2">
                 <img src="./images/posts/1 (1).JPG" alt="">
             </div>
             <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        </div>
+    </section>
+    
+    <section class="photo-gallery">
+        <div class="container">
+        <div class="heading">
+        <h1>Nature</h1>
+        </div>
+        <div class="gallery-1">
+            <i class="fa-solid fa-circle-chevron-left"></i>            
+            <div class="photo-box1">
+                <img src="./images/posts/scenery (10).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/scenery (7).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/scenery (9).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/scenery (6).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/scenery (1).jpg" alt="">
+            </div>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        </div>
+    </section>
+    
+    <section class="photo-gallery">
+        <div class="container">
+        <div class="heading">
+        <h1>Religious Places</h1>
+        </div>
+        <div class="gallery-1">
+            <i class="fa-solid fa-circle-chevron-left"></i>            
+            <div class="photo-box1">
+                <img src="./images/posts/1 (4).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/1 (6).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/1 (7).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/culture (4).jpg" alt="">
+            </div>
+            <div class="photo-box2">
+                <img src="./images/posts/culture (3).jpg" alt="">
+            </div>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
         </div>
     </section>
     
